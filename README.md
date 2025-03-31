@@ -37,8 +37,18 @@ Both methods follow similar training steps:
 
 ## Evaluation and Results
 - Both methods are evaluated using the **ROUGE metric** to measure summarization quality.
-- PEFT LoRA provides faster training and lower memory consumption.
-- Custom LoRA allows more fine-grained control but is more complex to implement.
+- PEFT LoRA provides faster training and lower memory consumption and is easier to implement and integrate due to its library support.
+- Custom LoRA allows more fine-grained control and slightly outperforms PEFT LoRA in all ROUGE metrics.
+
+
+## ROUGE Score Comparison
+The following table presents the ROUGE scores achieved by each method:
+
+| Metric  | Custom LoRA | PEFT LoRA |
+|---------|------------|-----------|
+| **ROUGE-1** | 0.3293     | 0.3194    |
+| **ROUGE-2** | 0.1306     | 0.1227    |
+| **ROUGE-L** | 0.2537     | 0.2462    |
 
 
 
